@@ -23,7 +23,7 @@ Route::controller(MainController::class)->group(function(){
     Route::get('students', 'viewall');
     Route::get('student/{id}', 'viewone');
     Route::post('student/create', 'studentcreate');
-    Route::put('student/{id}/update', 'studentupdate');
-    Route::delete('student/{id}/delete', 'studentdelete');
+    Route::put('student/update/{id}', 'studentupdate');
+    Route::delete('student/delete/{id}', 'studentdelete');
 });
 
